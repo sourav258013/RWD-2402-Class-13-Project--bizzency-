@@ -1,0 +1,1071 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* common css end*/
+
+
+/* =====header start===== */
+header{
+    background-color: #0f2f44;
+    color: #d4d7d9;
+}
+header .container .row{
+    justify-content: space-between;
+}
+header .container .row span{
+    display: inline-block;
+    padding: 19px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+}
+/* =====header end===== */
+
+
+
+/* =====nav start===== */
+nav{
+    height: 95px;
+}
+nav .container .row{
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .row ul li{
+    display: inline-block;
+    font-family: "Ubuntu", sans-serif;
+}
+nav .container .row ul li a{
+    padding: 37px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+    display: inline-block;
+    position: relative;
+}
+nav .container .row ul li a::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #0f2f44;
+    transition: 0.3s;
+}
+nav .container .row ul li a:hover::before{
+    width: 100%;
+}
+nav .container .row ul li button{
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:#999999;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+nav .container .row ul li a:hover{
+    background-color: #fff9e6;
+    color: #222222;
+    transition: 0.3s;
+}
+nav .container .row ul .active{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+
+/* =====nav end===== */
+
+
+/* =====banner start===== */
+#banner{
+    background-image: url("./images/banner.png");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Ubuntu", sans-serif;
+}
+#banner .row{
+    height: 600px;
+    align-items: center;
+}
+#banner .container .contains{
+    width: 470px;
+}
+#banner .container .row h4{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: #0f2f44;
+}
+#banner .container .row h1{
+    font-size: 80px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #0f2f44;
+}
+#banner .container .row p{
+    letter-spacing: 12px;
+    font-size: 32px;
+    margin-top: 18px;
+    color: #8484bf;
+}
+#banner .container .row span{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 30px 0;
+    color: #444444;
+    font-family:  "Open Sans", sans-serif;
+}
+#banner .container .row .contains .btn-group{
+    display: flex;
+    /* background-color: #ffc712; */
+}
+#banner .container .row .contains .btn-group a{
+    padding: 15px 20px;
+    background-color: #8484bf;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    border-radius: 7px;
+}
+#banner .container .row .contains .btn-group a:hover{
+    background-color: #fff;
+    color: #0f2f44;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+#banner .container .row .contains .btn-group img{
+    color: #8484bf;
+    margin-left: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 2px;
+}
+
+/* =====banner end===== */
+
+
+/* =====about section start===== */
+#about{}
+#about .container{
+    padding: 100px 0;
+}
+#about .container .row{}
+#about .container .row .about-contains{
+    width: 570px;
+}
+#about .container .row .about-contains h4{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    color: #5a6974;
+}
+#about .container .row .about-contains h1{
+    font-family:  "Abril Fatface", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+#about .container .row .about-contains p{
+    font-family:"Open Sans", sans-serif;
+    padding: 31px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0f2f44;
+}
+#about .container .row .about-contains ul{
+    margin-left: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 44px;
+    color: #0f2f44;
+}
+#about .container .row .about-contains .about-btn{
+    margin-top: 30px;
+    font-family: "Ubuntu", sans-serif;
+}
+#about .container .row .about-contains .about-btn .button-1{
+    padding: 16px 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    border: none;
+    background-color: #ffc712;
+    box-shadow: 2px 2px 10px #e3e3e3;
+    border-radius: 7px;
+    
+}
+#about .container .row .about-contains .about-btn .button-1:hover{
+    background-color: #ffffff;
+    color: #0f2f44;
+    transition: 0.3s;
+}
+#about .container .row .about-contains .about-btn .button-2{
+    padding: 16px 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    border: none;
+    background-color: #ffffff;
+    margin-left: 20px;
+    box-shadow: 2px 2px 10px #e3e3e3;
+    border-radius: 7px;
+}
+#about .container .row .about-contains .about-btn .button-2:hover{
+    background-color: #ffc712;
+    color: #0f2f44;
+    transition: 0.3s;
+}
+/* =====about section end===== */
+
+
+/* =====service section start===== */
+#service{
+    height: 470px;
+    background-color: #f5f5f5;
+}
+
+/* =====header start===== */
+#service .container .header{
+    text-align: center;
+    padding: 61px 0;
+}
+#service .container .header h6{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+}
+#service .container .header h1{
+    font-family:  "Abril Fatface", serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+/* =====header end===== */
+
+/* =====service-box style start===== */
+#service .container .service-box{
+    width: calc(33.33% - 30px);
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+    margin: 0 15px;
+    position: relative;
+    cursor: pointer;
+}
+#service .container .service-box .contains{
+    padding: 28px 48px 31px 22px;
+    background-color: #eeeeee;
+}
+#service .container .service-box .contains h3{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+#service .container .service-box .contains p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #444444;
+}
+#service .container .service-box .img{
+    padding: 0 21px;
+}
+/* =====service-box style end===== */
+
+/* =====overlay style start===== */
+#service .container .service-box .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f2f44;
+    flex-direction: column;
+    transform: scale(0);
+    transition: 0.5s;
+}
+#service .container .service-box .overlay h3{
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+#service .container .service-box:hover .overlay{
+    transform: scale(1);
+}
+#service .container .service-box .move-icone{
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+#service .container .service-box:hover .move-icone{
+    left: 50%;
+    transform: translateX(-50%);
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+/* =====overlay style end===== */
+
+/* =====service section end===== */
+
+
+/* =====portfolio section style start===== */
+#portfolio{
+    /* background-color: #d4d7d9; */
+    
+}
+/* =====header style start===== */
+#portfolio .container .header{
+    text-align: center;
+    padding: 100px 0 61px 0;
+    
+}
+#portfolio .container .header h6{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+}
+#portfolio .container .header h1{
+    font-family:  "Abril Fatface", serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+/* =====header style end===== */
+
+/* =====portfolio-box style start===== */
+#portfolio .container .portfolio-box{
+    width: calc(33.33% - 60px);
+    margin: 0 30px;
+    position: relative;
+    box-shadow:5px 7.5px 24px #0f2f44;
+    /* overflow: hidden; */
+}
+#portfolio .container .portfolio-box img{
+    display: block;
+    width: 100%;
+}
+/* =====portfolio-box style end===== */
+
+/* =====btn style start start===== */
+#portfolio .container .btn{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+#portfolio .container .btn button{
+    border: none;
+}
+#portfolio .container .btn button a{
+    padding: 17px 21px;
+    border: none;
+    background-color: #ffc712;
+    font-family:  "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    border-radius: 7px;
+}
+#portfolio .container .btn button a:hover{
+    background-color: #0f2f44;
+    color: #e9e9e9;
+    transition: 0.3s;
+}
+/* =====btn style start end===== */
+
+/* =====overlay style start===== */
+#portfolio .container .portfolio-box .overlay{
+    position: absolute;
+    width: 100%;
+    bottom: -79px;
+    opacity: 0; 
+    transition: 0.5s;
+}
+#portfolio .container .portfolio-box:hover .overlay{
+    opacity: 1;
+    bottom: 0;
+} 
+ #portfolio .container .portfolio-box .overlay h4{
+    bottom: 0;
+    padding: 30px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#portfolio .container .portfolio-box .overlay-icone-left{
+    position: absolute;
+    margin-left:0px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc712;
+    border-radius: 50%; 
+    left: -25px;
+    bottom: 170px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+#portfolio .container .portfolio-box .overlay-icone-left span{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+#portfolio .container .portfolio-box .overlay-icone-left span a{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    display: flex;
+    border-radius: 50%;
+}
+#portfolio .container .portfolio-box .overlay-icone-left:hover{
+    background-color: #d4d7d9;
+}
+
+#portfolio .container .portfolio-box .overlay-icone-right{
+    position: absolute;
+    margin-left:0px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc712;
+    border-radius: 50%; 
+    right: -25px;
+    bottom: 170px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#portfolio .container .portfolio-box .overlay-icone-right span{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    display: flex;
+}
+#portfolio .container .portfolio-box .overlay-icone-right span a{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    display: flex;
+    border-radius: 50%;
+}
+#portfolio .container .portfolio-box .overlay-icone-right:hover{
+    background-color: #d4d7d9;
+}
+
+/* =====overlay style end===== */
+
+/* =====portfolio section style end===== */
+
+
+
+/* =====testimonial section style start===== */
+
+#testimonial{
+    background-color:#f5f5f5;
+    padding: 61px 0;
+}
+
+/* =====header style start===== */
+#testimonial .container .header{
+    text-align: center;
+    
+    
+}
+#testimonial .container .header h6{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+}
+#testimonial .container .header h1{
+    font-family:  "Abril Fatface", serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+/* =====header style end===== */
+/* =====testimonial-box style start===== */
+#testimonial .testimonial-box{
+    width: calc(50% - 60px);
+    display: flex;
+    background-color: #e9e9e9;
+    margin: 61px 30px;
+    height: 215px;
+    position: relative;
+}
+#testimonial .testimonial-box .img{
+    display: inline-block;
+    height: 100%;
+}
+#testimonial .testimonial-box .contains{
+    padding: 30px 20px;
+}
+#testimonial .testimonial-box .contains p{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #636f7a;
+    text-transform: capitalize;
+    
+}
+#testimonial .testimonial-box .contains h3{
+    margin-top: 30px;
+    font-family:  "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+}
+#testimonial .testimonial-box .contains h6{
+    font-family:  "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #636f7a;
+    margin-bottom: 31px;
+}
+
+/* =====overlay start===== */
+#testimonial .testimonial-box .overlay-icone-left{
+    position: absolute;
+    margin-left:0px;
+    border-radius: 50%; 
+    left: -30px;
+    bottom: 80px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc712;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#testimonial .testimonial-box .overlay-icone-left span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* position: relative; */
+}
+#testimonial .testimonial-box .overlay-icone-left span a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    color: #000;
+}
+
+#testimonial .testimonial-box .overlay-icone-left:hover{
+    background-color: #d4d7d9;
+}
+
+#testimonial .testimonial-box .overlay-icone-right{
+    position: absolute;
+    right: -30px;
+    bottom: 80px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffc712;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#testimonial .testimonial-box .overlay-icone-right span{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#testimonial .testimonial-box .overlay-icone-right span a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#testimonial .testimonial-box .overlay-icone-right:hover{
+    background-color: #d4d7d9;
+}
+/* =====overlay end===== */
+
+/* =====testimonial-box style end===== */
+/* =====testimonial section style end===== */
+
+/* =====Bloges section style start===== */
+#blogs{
+    height: 896px;
+}
+#blogs .container{}
+
+#blogs .container .header{
+    text-align: center;
+    padding-top: 100px;
+}
+#blogs .container .header h6{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+}
+#blogs .container .header h1{
+    font-family:  "Abril Fatface", serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+#blogs .container .bloges-box{
+    width: calc(33.33% - 40px);
+    margin-top: 60px;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+#blogs .container .bloges-box img{
+    height: 284px;
+    width: 311px;
+}
+#blogs .container .bloges-box:hover{
+    background-color: #0f2f44;
+    color: #ffffff;
+    transition: 0.5s;
+}
+#blogs .container .bloges-box .contains{
+    margin-top: 30px;
+
+}
+#blogs .container .bloges-box .contains h6{
+    font-family:  "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777777;
+}
+#blogs .container .bloges-box .contains p{
+    font-family:  "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #222222;
+}
+#blogs .container .bloges-box:hover .contains p{
+    color: #fff;
+}
+#blogs .container .bloges-box:hover .contains h6{
+    color: #96a4ad;
+}
+#blogs .container .bloges-box:hover .contains a{
+    color: #fff;
+}
+#blogs .container .bloges-box .contains span{
+    margin: 30px 0;
+    display: inline-block;
+}
+#blogs .container .bloges-box .contains a{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777777;
+}
+
+/* =====overlay icone style start===== */
+#blogs .container .bloges-box .overlay-left-icone{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc712;
+    border-radius: 50%;
+    left: -22px;
+    bottom: 245px;
+}
+#blogs .container .bloges-box .overlay-left-icone a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+#blogs .container .bloges-box .overlay-left-icone span{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#blogs .container .bloges-box .overlay-left-icone a{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blogs .container .bloges-box .overlay-right-icone{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffc712;
+    right: -22px;
+    bottom: 245px;
+}
+
+#blogs .container .bloges-box .overlay-right-icone a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+
+#blogs .container .bloges-box .overlay-right-icone span{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#blogs .container .bloges-box .overlay-right-icone a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+/* =====overlay icone style end===== */
+
+/* =====btn style start===== */
+#blogs .container .btn{
+    display: block;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#blogs .container .btn button{
+    border: none;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+#blogs .container .btn button a{
+    /* display: inline-block; */
+    color: #1f3643;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border-radius: 5%;
+    background-color: #ffc712;
+}
+#blogs .container .btn button a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.5s;
+}
+/* =====btn style end===== */
+
+/* =====Bloges section style end===== */
+
+
+/* =====Footer section style start===== */
+footer{
+    height: 402px;
+    background-color: #f5f5f5;
+}
+/* =====footer-box1 start===== */
+
+footer .container .footer-box1{
+    width: 265px;
+    margin-top: 96px;
+}
+footer .container .footer-box1 p{
+    padding: 32px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* ===== facebook icone style start===== */
+footer .container .footer-box1 .row .facebook{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1f3d50;
+    margin-right: 10px;
+}
+footer .container .footer-box1 .row .facebook a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   color: #000; 
+}
+footer .container .footer-box1 .row .facebook a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.3s;
+}
+/* ===== facebook icone style end===== */
+
+/* =====twiter icone style start===== */
+footer .container .footer-box1 .row .twiter{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1f3d50;
+    margin-right: 10px;
+}
+footer .container .footer-box1 .row .twiter a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   color: #000;
+}
+footer .container .footer-box1 .row .twiter a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.3s;
+}
+/* =====twiter icone style end===== */
+
+/* =====website icone style start===== */
+footer .container .footer-box1 .row .website{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1f3d50;
+    margin-right: 10px;
+}
+footer .container .footer-box1 .row .website a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   color: #000;
+}
+footer .container .footer-box1 .row .website a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.3s;
+}
+/* =====website icone style end===== */
+
+/* =====linkdin icone style start===== */
+footer .container .footer-box1 .row .linckdin{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1f3d50;
+    margin-right: 10px;
+}
+footer .container .footer-box1 .row .linckdin a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   color: #000;
+}
+footer .container .footer-box1 .row .linckdin a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.3s;
+}
+/* =====linkdin icone style end===== */
+
+/* =====instagram icone style start===== */
+footer .container .footer-box1 .row .instagram{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+     border: 1px solid #1f3d50;
+    margin-right: 10px;
+}
+footer .container .footer-box1 .row .instagram a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   color: #000;
+}
+footer .container .footer-box1 .row .instagram a:hover{
+    background-color: #0f2f44;
+    color: #fff;
+    transition: 0.3s;
+}
+/* =====instagram icone style end===== */
+/* =====footer-box1 end===== */
+
+/* =====footer-box2 style start===== */
+#footer .container .footer-box2{
+    width: 267px;
+    height: 246px;
+    margin-top: 96px;
+    margin-left: 33px;   
+}
+/* =====footer-box2 style start===== */
+#footer .container .footer-box2 h3{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+#footer .container .footer-box2 .row-1{
+    margin-top: 35px;
+    
+}
+#footer .container .footer-box2 .row-1 p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+#footer .container .footer-box2 .row-2{
+    margin-top: 5px;
+}
+#footer .container .footer-box2 .row-2 p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+#footer .container .footer-box2 .row-3{
+    margin-top: 5px;
+}
+#footer .container .footer-box2 .row-3 span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+/* =====footer-box2 style end===== */
+
+/* =====footer-box3 style start===== */
+#footer .container .footer-box3{
+    margin-top: 96px;
+    margin-left: 33px;
+}
+#footer .container .footer-box3 h3{
+    margin-bottom: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+#footer .container .footer-box3 p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 42px;
+}
+#footer .container .footer-box3 a{
+    color: #444444;
+}
+#footer .container .footer-box3 a:hover{
+    color: #ffc712;
+    transition: 0.3s;
+}
+/* =====footer-box3 style end===== */
+
+/* =====footer-box4 style start===== */
+#footer .container .footer-box4{
+    margin-top: 96px;
+    margin-left: 33px;
+}
+#footer .container .footer-box4 h3{
+    margin-bottom: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+#footer .container .footer-box4 .row img{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+/* =====footer-box4 style end===== */
+/* =====Footer section style end===== */
+
